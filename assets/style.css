@@ -13,7 +13,7 @@ header {
   background-color: #eee;
 }
 
-#logo {
+#header-img {
   padding: 10px 30px;
   height: 30px;
   width: auto;
@@ -46,11 +46,14 @@ input {
   margin: 10px;
 }
 
-button {
+#submit {
   background-color: #F1C40E;
   border: none;
   padding: 5px 15px;
-  margin: 10px 0 100px 0;
+  margin: 15px 0 15px 0;
+  font-weight: 900;
+  text-transform: uppercase;
+  width: 130px;
 }
 
 .features {
@@ -79,9 +82,41 @@ iframe {
 }
 
 
+#prices-container {
+  display: flex;
+  justify-content: space-around;
+}
 
+#prices-container button {
+  font-weight: initial;
+  width: 100px;
+  background-color: #F1C40E;
+  border: none;
+  padding: 5px 15px;
+  margin: 15px 0 15px 0;
+  text-transform: uppercase;
+}
 
+.price-option {
+  border: 1px solid black;
+  margin: 20px 5px;
+  width: 300px;
+  min-width: 300px;
+}
 
+.price-option h3 {
+  background-color: lightgray;
+  text-transform: uppercase;
+  padding: 10px 0;
+}
+
+.price-option h2 {
+  padding: 15px 0;
+}
+
+.price-option p {
+  padding: 5px 0;
+}
 
 
 

@@ -3,23 +3,27 @@
   <meta charset="UTF-8">
   <title>FCC Product Landing Page</title>
   <link rel="stylesheet" type="text/css" href="assets/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/572d3a239c.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header>
-    <img src="assets/original_trombones.png" alt="logo" id="logo">
-    <ul class="navlinks">
-      <li><a href="#">features</a></li>
-      <li><a href="#">how it works</a></li>
-      <li><a href="#">pricing</a></li>
-    </ul>
+  <header id="header">
+    <img src="assets/original_trombones.png" alt="logo" id="header-img">
+    <nav id="nav-bar">
+      <ul class="navlinks">
+        <li class="navlink"><a href="#features-link">features</a></li>
+        <li class="navlink"><a href="#how-it-works-link">how it works</a></li>
+        <li class="navlink"><a href="#prices-container">pricing</a></li>
+      </ul>
+    </nav>
   </header>
   <div class="main-content">
     <h2>Handcrafted, home-made masterpieces</h2>
-    <input type="text" placeholder="Enter your email address"><br>
-    <button><strong>Get Started</strong></button>
-
-    <div class="features">
+    <form id="form">
+      <input id="email" type="email" placeholder="Enter your email address"><br>
+      <input type="submit" id="submit" value="Get Started">
+    </form>
+    <div class="features" id="features-link">
       <div class="icon">
         <i class="fa fa-3x fa-fire" aria-hidden="true"></i>
       </div>
@@ -46,8 +50,36 @@
         <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
       </div>
     </div>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+    <iframe id="how-it-works-link video" width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <section id="prices-container">
+      <div class="price-option">
+        <h3>Tenor Trombone</h3>
+        <h2>$600</h2>
+        <p>Lorem ipsum.</p>
+        <p>Lorem ipsum.</p>
+        <p>Lorem ipsum dolor.</p>
+        <p>Lorem ipsum.</p>
+        <button>Select</button>
+      </div>
+      <div class="price-option">
+        <h3>Bass Trombone</h3>
+        <h2>$900</h2>
+        <p>Lorem ipsum.</p>
+        <p>Lorem ipsum.</p>
+        <p>Lorem ipsum dolor.</p>
+        <p>Lorem ipsum.</p>
+        <button>Select</button>
+      </div>
+      <div class="price-option">
+        <h3>Valve Trombone</h3>
+        <h2>$1200</h2>
+        <p>Lorem ipsum.</p>
+        <p>Lorem ipsum.</p>
+        <p>Lorem ipsum dolor.</p>
+        <p>Lorem ipsum.</p>
+        <button>Select</button>
+      </div>
+    </section>
   </div>
 </body>
 </html>
