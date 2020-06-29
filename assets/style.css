@@ -1,7 +1,12 @@
-body, p, h1, h2, h3, h4, h5, h6 {
+body {
+  background-color: #eee;
   margin: 0;
   font-family: 'Lato', sans-serif;
-  background-color: #eee;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+
 }
 
 header {
@@ -23,13 +28,17 @@ header {
   text-transform: capitalize;
   display: flex;
   list-style: none;
-
 }
 
 .navlinks li a {
   padding: 0 30px;
+
   text-decoration: none;
   color: #000;
+}
+
+ul {
+  padding: 0;
 }
 
 .main-content {
@@ -117,6 +126,75 @@ iframe {
 .price-option p {
   padding: 5px 0;
 }
+
+footer {
+  background-color: lightgray;
+  padding: 20px;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+footer > h5 {
+  background-color: h5;
+}
+
+.footer-links li a {
+  padding: 0 5px;
+  text-decoration: none;
+  color: #000;
+}
+
+.footer-links {
+  text-transform: capitalize;
+  display: flex;
+  list-style: none;
+  margin: 5px;
+}
+
+@media (max-width: 700px) {
+  .main-content {
+    width: 95%;
+  }
+
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .feature-text {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .features .icon {
+    display: none;
+  }
+
+  iframe {
+    width: 100%;
+    margin: 0;
+  }
+
+  #prices-container {
+    flex-wrap: wrap;
+  }
+
+}
+
+
+
+
+
+
+
+
 
 
 
